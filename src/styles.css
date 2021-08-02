@@ -1,0 +1,176 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* ROOT */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(0, 100%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    height: 100vh;
+}
+
+.content-container {
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 900px;
+    width: 70%;
+}
+
+/* MAIN */
+
+main {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    max-height: 600px;
+}
+
+/* SECTION */
+
+section {
+    width: 100%;
+    height: 100%;
+    padding: 45px;
+}
+
+section h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+
+section p {
+    opacity: 0.8;
+    line-height: 25px;
+    margin: 30px 0 100px;
+}
+
+.text-content {
+    position: relative;
+    height: 100%;
+}
+
+section button {
+    font-family: 'Lexend Deca', sans-serif;
+    position: absolute;
+    top: 100%;
+    transform: translatey(-100%);
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    color: transparent;
+}
+
+section button:hover {
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+}
+
+#sedan {
+    background-color: hsl(31, 77%, 52%);
+}
+
+#sedan button {
+    color: hsl(31, 77%, 52%);
+}
+
+#sedan button:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#suv button {
+    color: hsl(184, 100%, 22%);
+}
+
+#suv button:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+#luxury button:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color:hsl(31, 77%, 52%);
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+.attribution { 
+    font-size: 12px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 950px) {
+
+    body {
+        height: auto;
+        padding: 80px 0;
+    }
+
+    /* MAIN */
+
+    .content-container {
+        width: 90%;
+    }
+
+    main {
+        flex-direction: column;
+        height: auto;
+        max-height: none;
+    }
+
+    section h2 {
+        margin: 20px 0;
+    }
+
+    section p {
+        margin: 30px 0;
+    }
+
+    section button {
+        position: static;
+        transform: translatey(0);
+    }
+}
