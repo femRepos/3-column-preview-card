@@ -11,6 +11,7 @@
 
 body {
     font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
     color: hsl(0, 100%, 100%);
     display: flex;
     align-items: center;
@@ -34,7 +35,7 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 65vh;
+    height: 63vh;
     max-height: 600px;
 }
 
@@ -54,7 +55,7 @@ section h2 {
 }
 
 section p {
-    opacity: 0.8;
+    color: hsla(0, 0%, 100%, 0.75);
     line-height: 25px;
     margin: 30px 0 100px;
 }
@@ -66,10 +67,11 @@ section p {
 
 section button {
     font-family: 'Lexend Deca', sans-serif;
+    font-size: 1em;
     position: absolute;
     top: 100%;
     transform: translatey(-100%);
-    padding: 15px 30px;
+    padding: 12px 25px;
     border-radius: 50px;
     border: 1px solid transparent;
     color: transparent;
